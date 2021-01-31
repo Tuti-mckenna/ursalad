@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+    <title>urSalad</title>
+</head>
+
+<body>
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg  navbar-light">
+        <a class="navbar-brand" href="#index">
+            <div id="logo">
+                <a class="navbar-brand mx-auto" href="index.html">
+                    <img class="Logo" src="media/logo.png" alt="LogoUrSalad">
+                </a>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">urSalad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tienda">Comprar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ingredientes">Ingredients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End NavBar -->
+
+    <!-- Tienda -->
+    <section class="store" id="tienda">
+        <div class="container">
+            <div id="myBtnContainer">
+                <button class="btnFilter active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btnFilter" onclick="filterSelection('vegan')"> Veggie</button>
+            </div>
+            <div class="items">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <div class="item shadow mb-4 filterDiv vegan">
+                            <h3 class="item-title">Ensalada de Palta</h3>
+                            <img class="item-image" src="./media/avocado.png">
+                            <div class="item-details">
+                                <h4 class="item-price">$150</h4>
+                                <button class="item-button btn btn-outline-success addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="item shadow mb-4 filterDiv vegan">
+                            <h3 class="item-title">Ensalada de Tofu</h3>
+                            <img class="item-image" src="./media/tofu.png">
+
+                            <div class="item-details">
+                                <h4 class="item-price">$200</h4>
+                                <button class="item-button btn  btn-outline-success addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="item shadow mb-4 filterDiv vegan">
+                            <h3 class="item-title">Ensalada de Frutos Secos</h3>
+                            <img class="item-image" src="./media/cashew.png">
+
+                            <div class="item-details">
+                                <h4 class="item-price">$300</h4>
+                                <button class="item-button btn  btn-outline-success addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="item shadow mb-4 filterDiv">
+                            <h3 class="item-title">Ensalada de Pollo</h3>
+                            <img class="item-image" src="./media/chicken-leg.png">
+                            <div class="item-details">
+                                <h4 class="item-price">$200</h4>
+                                <button class="item-button btn  btn-outline-success addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="item shadow mb-4 filterDiv">
+                            <h3 class="item-title">Ensalada de Atun</h3>
+                            <img class="item-image" src="./media/tuna.png">
+                            <div class="item-details">
+                                <h4 class="item-price">$250</h4>
+                                <button class="item-button btn  btn-outline-success addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="item shadow mb-4 filterDiv ">
+                            <h3 class="item-title">Ensalada de Huevo</h3>
+                            <img class="item-image" src="./media/egg.png">
+                            <div class="item-details">
+                                <h4 class="item-price">$175</h4>
+                                <button class="item-button btn  btn-outline-success addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Final Tienda -->
+
+    <!-- Seccion CarritoDeCompras -->
+    <section class="shopping-cart">
+        <div class="container">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- ? ShoppingCartItems -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+            </div>
+            <!-- ? Finaliza ShoppingCartItems -->
+            <!-- Total -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">$0</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal" data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Finaliza Total -->
+            <!-- Modal Compra -->
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Finaliza Modal Compra -->
+        </div>
+    </section>
+    <!-- Finaliza Seccion CarritoDeCompras -->
+    <br><br>
+
+    <!--Seccion Tabla Ingredientes-->
+    <div class="container" id="ingredientes">
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="ensalada">Salad</th>
+                            <th scope="col" class="ingredients" id="ingredientsTitulo">Ingredients</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="ensalada"><img class="item-image" src="./media/avocado.png">
+                            </th>
+                            <td class="ingredients">
+                                <img class="img-fluid" class="item-image" src="./media/soy.png">
+                                <img class="img-fluid" class="item-image" src="./media/champignon.png">
+                                <img class="img-fluid" class="item-image" src="./media/zanahoria.png">
+                                <img class="img-fluid" class="item-image" src="./media/tomate.png">
+                                <img class="img-fluid" class="item-image" src="./media/sesamo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="ensalada"><img class="item-image" src="./media/tofu.png">
+                            </th>
+                            <td class="ingredients">
+                                <img class="img-fluid" class="item-image" src="./media/lentejas.png">
+                                <img class="img-fluid" class="item-image" src="./media/rucula.png">
+                                <img class="img-fluid" class="item-image" src="./media/zanahoria.png">
+                                <img class="img-fluid" class="item-image" src="./media/cebolla.png">
+                                <img class="img-fluid" class="item-image" src="./media/sesamo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="ensalada"><img class="item-image" src="./media/cashew.png">
+                            </th>
+                            <td class="ingredients">
+                                <img class="img-fluid" class="item-image" src="./media/soy.png">
+                                <img class="img-fluid" class="item-image" src="./media/rucula.png">
+                                <img class="img-fluid" class="item-image" src="./media/zanahoria.png">
+                                <img class="img-fluid" class="item-image" src="./media/tomate.png">
+                                <img class="img-fluid" class="item-image" src="./media/champignon.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="ensalada"> <img class="item-image" src="./media/chicken-leg.png">
+                            </th>
+                            <td class="ingredients">
+                                <img class="img-fluid" class="item-image" src="./media/lechuga.png">
+                                <img class="img-fluid" class="item-image" src="./media/cebolla.png">
+                                <img class="img-fluid" class="item-image" src="./media/zanahoria.png">
+                                <img class="img-fluid" class="item-image" src="./media/tomate.png">
+                                <img class="img-fluid" class="item-image" src="./media/sesamo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="ensalada"><img class="item-image" src="./media/tuna.png">
+                            </th>
+                            <td class="ingredients">
+                                <img class="img-fluid" class="item-image" src="./media/patata.png">
+                                <img class="img-fluid" class="item-image" src="./media/rucula.png">
+                                <img class="img-fluid" class="item-image" src="./media/zanahoria.png">
+                                <img class="img-fluid" class="item-image" src="./media/queso.png">
+                                <img class="img-fluid" class="item-image" src="./media/sesamo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="ensalada"> <img class="item-image" src="./media/egg.png">
+                            </th>
+                            <td class="ingredients">
+                                <img class="img-fluid" class="item-image" src="./media/patata.png">
+                                <img class="img-fluid" class="item-image" src="./media/champignon.png">
+                                <img class="img-fluid" class="item-image" src="./media/zanahoria.png">
+                                <img class="img-fluid" class="item-image" src="./media/tomate.png">
+                                <img class="img-fluid" class="item-image" src="./media/sesamo.png">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--Finaliza Tabla Ingredientes-->
+
+
+    <!-- Footer -->
+    <footer class="text-center" id="footer">
+        <div class="container p-4">
+            <div class="row">
+                <!--Grid column1-->
+                <div class=" col-md-6 mb-8 mb-md-0">
+                    <h2 class="text-uppercase">urSalad</h2>
+                    <h6 class="text-uppercase">Rosario, Santa Fe, Argentina</h6>
+                </div>
+                <!--Grid column2-->
+                <div class="contacto" class=" col-md-6 mb-4 mb-md-0">
+                    <img src="media/logoinstagram.png" alt="LogoInstagram">
+                    <img src="media/logofacebook.png" alt="LogoFacebook">
+                    <img src="media/logowhatsapp.png" alt="LogoWhatsup">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Finaliza Footer -->
+    <!-- Copyright -->
+    <div class="text-center p-3">
+        © 2020 Copyright: @tuticagnoni
+    </div>
+
+    <!-- Scripts JS -->
+    <script src="js\jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js\main.js"></script>
+</body>
+
+</html>

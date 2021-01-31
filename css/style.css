@@ -1,0 +1,205 @@
+/*NavBar*/
+.Logo {
+  height: 200px;
+}
+
+.navbar {
+  background-color: #82A633;
+  height: 60%;
+  margin: 0px 0px 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar div ul li a {
+  font-family: 'Rubik', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 200%;
+  margin: 30px;
+}
+
+.navbar .navbar #logo {
+  padding: 15%;
+  position: relative;
+  bottom: -20px;
+}
+
+/*Tienda*/
+.store {
+  background-color: #82A633;
+  padding: 25px;
+}
+
+/*Filtro Veggie*/
+.container {
+  overflow: hidden;
+}
+
+.btnFilter {
+  border-radius: 10px;
+  outline: none;
+  margin: 15px;
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.filterDiv {
+  line-height: 100px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.btnFilter:hover {
+  background-color: #508C14;
+}
+
+.btnFilter.active {
+  background-color: #f1f1f1;
+}
+
+/*Ensaladas*/
+.item {
+  background-color: #F2BC79;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.item-title {
+  padding: 30px;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  border: solid #F2BC79;
+}
+
+.item-image {
+  height: 150px;
+}
+
+.item-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0px 15px;
+}
+
+.item-button {
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Carrito de Compras */
+.shopping-cart {
+  background-color: #82A633;
+  font-family: 'Rubik', sans-serif;
+}
+
+.shopping-cart-items {
+  padding: 20px 0px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.shopping-cart-personalizados {
+  font-family: 'Rubik', sans-serif;
+}
+
+.shopping-cart-header {
+  border-bottom: 1px solid #ccc;
+  font-family: 'Rubik', sans-serif;
+}
+
+.shopping-cart-image {
+  max-width: 80px;
+  border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px;
+}
+
+.shopping-cart-total {
+  min-height: 96px;
+}
+
+/*Tabla de Ingredientes*/
+#ingredientes {
+  width: 60%;
+  margin-top: 35px;
+  margin-bottom: 75px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.img-fluid {
+  height: 100px;
+}
+
+.ensalada {
+  background-color: #82A633;
+}
+
+.ingredients {
+  background-color: #82BF26;
+}
+
+#ingredientsTitulo {
+  color: #F2BC79;
+}
+
+/*Footer - Contacto*/
+#footer {
+  background-color: #F2BC79;
+  padding: 30px;
+  font-family: 'Rubik', sans-serif;
+}
+
+#footer h6 {
+  margin: 10px 20px;
+}
+
+.contacto img {
+  height: 60px;
+  padding: 10px 20px;
+}
+
+/*mediaquerys*/
+@media only screen and (max-width: 600px) {
+  #ingredientes {
+    font-size: 100%;
+    width: 100%;
+  }
+  #ingredientes img {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  .item {
+    height: 475px;
+  }
+  #tabla {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
